@@ -451,12 +451,14 @@ footer a{
 
     .logo{
         justify-content:center;
+       gap:15px;
     }
 
     .logo img{
         width:40px;
         height:40px;
        object-fit:contain;
+       border-radius:50%;
        margin-right:12px;
       
     }
