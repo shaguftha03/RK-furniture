@@ -439,219 +439,163 @@ footer a{
 
 }
 /* ================= MOBILE RESPONSIVE ================= */
+/* ================= MOBILE RESPONSIVE ================= */
 
 @media (max-width: 768px) {
 
-    /* ===== HEADER ===== */
-
+    /* HEADER */
     header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-
-        padding: 6px 4%;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        gap: 4px;
-    }
-
-    /* Logo */
-    .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        padding: 5px 3%;
+        gap: 2px;
     }
 
     .logo img {
-        width: 40px;
-        height: 40px;
-        object-fit: cover;
-        margin-right: 7px;
+        width: 35px;
+        height: 35px;
+        margin-right: 5px;
     }
 
     .logo h2 {
-        font-size: 16px;
-        line-height: 1.1;
+        font-size: 15px;
         white-space: nowrap;
     }
 
-    /* Navigation */
     nav {
-        width: 100%;
-        margin-top: 2px;
+        margin-top: 0;
     }
 
     nav ul {
-        display: flex;
         justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
-
-        gap: 2px;
-        padding: 0;
     }
 
     nav ul li {
-        margin: 2px 5px;
+        margin: 1px 4px;
     }
 
     nav ul li a {
-        font-size: 13px;
-    }
-
-    /* Header WhatsApp button */
-    .contact-btn {
-        margin-top: 3px;
-    }
-
-    .contact-btn a {
-        display: inline-block;
-        padding: 6px 14px;
         font-size: 12px;
     }
 
+    /* HEADER WHATSAPP */
+    .contact-btn {
+        margin-top: 2px;
+    }
 
-    /* ===== HERO ===== */
+    .contact-btn a {
+        padding: 5px 12px;
+        font-size: 11px;
+    }
 
+
+    /* HERO */
     .hero {
         min-height: 100vh;
-        height: auto;
     }
 
     .hero-content {
-        width: 100%;
-        padding: 120px 20px 40px;
+        padding: 100px 15px 30px;
     }
 
     .hero-content h1 {
-        font-size: 34px;
-        line-height: 1.2;
-        margin-bottom: 15px;
+        font-size: 30px;
+        margin-bottom: 12px;
     }
 
     .hero-content p {
-        font-size: 17px;
-        line-height: 26px;
-        margin-bottom: 25px;
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 20px;
     }
 
 
-    /* ===== BUTTONS ===== */
-
+    /* BUTTONS */
     .btn,
     .btn2 {
-        padding: 11px 20px;
-        margin: 4px;
-        font-size: 14px;
+        padding: 9px 17px;
+        margin: 3px;
+        font-size: 13px;
     }
 
 
-    /* ===== SECTIONS ===== */
-
+    /* SECTIONS */
     section {
-        padding: 60px 5%;
+        padding: 45px 5%;
     }
 
     section h2 {
-        font-size: 30px;
-        margin-bottom: 15px;
+        font-size: 27px;
+        margin-bottom: 12px;
     }
 
     section p {
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 15px;
+        line-height: 23px;
     }
 
 
-    /* ===== ABOUT ===== */
-
+    /* ABOUT */
     .about-box {
         grid-template-columns: 1fr;
-        gap: 20px;
-        margin-top: 35px;
+        gap: 15px;
+        margin-top: 25px;
     }
 
     .about-box div {
-        padding: 25px;
+        padding: 20px;
     }
 
     .about-box i {
-        font-size: 45px;
+        font-size: 40px;
     }
 
 
-    /* ===== PRODUCTS ===== */
-
+    /* PRODUCTS */
     .product-container {
         grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .product {
-        width: 100%;
+        gap: 18px;
     }
 
     .product img {
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
+        height: 200px;
     }
 
 
-    /* ===== GALLERY ===== */
-
+    /* GALLERY */
     .gallery {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 12px;
     }
 
     .gallery img {
-        width: 100%;
-        height: auto;
-        max-height: 350px;
-        object-fit: cover;
+        height: 200px;
     }
 
 
-    /* ===== CONTACT ===== */
-
+    /* CONTACT */
     .contact {
         grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 20px;
     }
 
     .contact-info {
-        line-height: 35px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
+        line-height: 32px;
     }
 
 
-    /* ===== FOOTER ===== */
-
+    /* FOOTER */
     footer {
-        padding: 25px 10px;
-        font-size: 14px;
+        padding: 20px 8px;
+        font-size: 13px;
     }
 
 
-    /* ===== FLOATING WHATSAPP ===== */
-
+    /* FLOATING WHATSAPP */
     .whatsapp {
-        width: 50px;
-        height: 50px;
-
-        right: 15px;
-        bottom: 15px;
-
-        font-size: 24px;
+        width: 45px;
+        height: 45px;
+        right: 12px;
+        bottom: 12px;
+        font-size: 21px;
     }
-
 }
