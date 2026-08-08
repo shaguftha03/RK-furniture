@@ -440,17 +440,17 @@ footer a{
 }
 /* ================= MOBILE RESPONSIVE ================= */
 
+/* ================= MOBILE RESPONSIVE ================= */
+
 @media (max-width: 768px){
 
     header{
         padding:8px 4%;
         flex-direction:column;
-        gap:5px;
     }
 
     .logo{
-        display:flex;
-        align-items:center;
+        margin-bottom:5px;
     }
 
     .logo img{
@@ -465,13 +465,13 @@ footer a{
 
     nav{
         width:100%;
-        margin-top:3px;
+        margin-top:5px;
     }
 
     nav ul{
         justify-content:center;
         flex-wrap:wrap;
-        gap:2px;
+        gap:4px;
     }
 
     nav ul li{
@@ -479,16 +479,77 @@ footer a{
     }
 
     nav ul li a{
-        font-size:15px;
+        font-size:14px;
     }
 
     .contact-btn{
-        margin-top:5px;
+        margin-top:8px;
     }
 
     .contact-btn a{
-        padding:9px 18px;
-        font-size:15px;
+        padding:8px 18px;
+        font-size:14px;
     }
 
+    /* HERO */
+
+    .hero{
+        min-height:100vh;
+        height:auto;
+    }
+
+    .hero-content{
+        padding:100px 20px 40px;
+    }
+
+    .hero-content h1{
+        font-size:36px;
+        line-height:1.2;
+    }
+
+    .hero-content p{
+        font-size:17px;
+        line-height:1.5;
+        margin-bottom:25px;
+    }
+
+    .btn,
+    .btn2{
+        padding:12px 22px;
+        margin:5px;
+        font-size:14px;
+    }
+
+    section{
+        padding:60px 5%;
+    }
+
+    section h2{
+        font-size:30px;
+    }
+
+    section p{
+        font-size:16px;
+        line-height:26px;
+    }
+
+    .about-box,
+    .product-container,
+    .gallery,
+    .contact{
+        grid-template-columns:1fr;
+    }
+
+    .product img,
+    .gallery img{
+        height:220px;
+    }
+
+    .whatsapp{
+        width:50px;
+        height:50px;
+        right:15px;
+        bottom:15px;
+        font-size:24px;
+    }
 }
