@@ -1,0 +1,440 @@
+/* ==========================
+   RK Furnitures & Wood Work
+   style.css
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f4ec;
+    color:#333;
+}
+
+/* ================= HEADER ================= */
+
+header{
+
+    width:100%;
+    background:#5A3E2B;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 8%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+
+}
+
+.logo img{
+
+    width:80px;
+    height:80px;    
+    object-fit:cover;
+    border-radius:50%;
+
+}
+
+.logo h2{
+
+    color:white;
+    font-size:25px;
+
+}
+
+nav ul{
+
+    display:flex;
+    list-style:none;
+
+}
+
+nav ul li{
+
+    margin:0 15px;
+
+}
+
+nav ul li a{
+
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#D4AF37;
+
+}
+
+/* WhatsApp Button */
+
+.contact-btn a{
+
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+
+}
+
+.contact-btn a:hover{
+
+    background:#128C7E;
+
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+    height:100vh;
+
+    background:url("../images/hero.jpg") center center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.overlay{
+
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.hero-content{
+
+    text-align:center;
+    color:white;
+
+}
+
+.hero-content h1{
+
+    font-size:60px;
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    font-size:24px;
+    margin-bottom:40px;
+
+}
+
+/* Buttons */
+
+.btn{
+
+    display:inline-block;
+    background:#D4AF37;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    margin-right:15px;
+    border-radius:40px;
+    transition:.4s;
+
+}
+
+.btn:hover{
+
+    background:white;
+    color:#5A3E2B;
+
+}
+
+.btn2{
+
+    display:inline-block;
+    background:#5A3E2B;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:40px;
+    transition:.4s;
+
+}
+
+.btn2:hover{
+
+    background:#D4AF37;
+
+}
+
+/* ================= ABOUT ================= */
+
+section{
+
+    padding:90px 10%;
+
+}
+
+section h2{
+
+    text-align:center;
+    font-size:40px;
+    color:#5A3E2B;
+    margin-bottom:20px;
+
+}
+
+section p{
+
+    text-align:center;
+    font-size:18px;
+    line-height:30px;
+
+}
+
+.about-box{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:60px;
+
+}
+
+.about-box div{
+
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+}
+
+.about-box div:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.about-box i{
+
+    font-size:55px;
+    color:#D4AF37;
+    margin-bottom:20px;
+
+}
+
+.about-box h3{
+
+    margin-bottom:15px;
+    color:#5A3E2B;
+
+}
+
+/* ================= PRODUCTS ================= */
+
+.product-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+
+}
+
+.product{
+
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.4s;
+
+}
+
+.product:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.product img{
+
+    width:100%;
+    height:250px;
+    object-fit:cover;
+
+}
+
+.product h3{
+
+    text-align:center;
+    padding:15px;
+
+}
+
+.product a{
+
+    display:block;
+    background:#D4AF37;
+    color:white;
+    text-align:center;
+    padding:12px;
+    text-decoration:none;
+
+}
+
+/* ================= GALLERY ================= */
+
+.gallery{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+
+}
+
+.gallery img{
+
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:.4s;
+    cursor:pointer;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:40px;
+
+}
+
+.contact-info{
+
+    line-height:45px;
+
+}
+
+.contact-info i{
+
+    color:#D4AF37;
+    margin-right:10px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+
+}
+
+.contact-form button{
+
+    width:100%;
+    padding:15px;
+    background:#5A3E2B;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+
+}
+
+.contact-form button:hover{
+
+    background:#D4AF37;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:#5A3E2B;
+    color:white;
+    text-align:center;
+    padding:30px;
+
+}
+
+footer a{
+
+    color:#D4AF37;
+    text-decoration:none;
+
+}
+
+/* ================= FLOATING WHATSAPP ================= */
+
+.whatsapp{
+
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:#25D366;
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+}
+
+.whatsapp:hover{
+
+    transform:scale(1.1);
+
+}
